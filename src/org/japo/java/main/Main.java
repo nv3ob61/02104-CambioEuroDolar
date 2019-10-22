@@ -27,8 +27,7 @@ public class Main {
 
         final double DOLAR = 1.10;
 
-        System.out.printf("Un euro son %.2f" + " dólares %n", DOLAR);
-        System.out.println();
+        System.out.printf("Un euro son %.2f" + " dólares %n%n", DOLAR);
         System.out.println("FORMA alternativa");
         System.out.println();
         System.out.print("Un Euro se cambia por: ");
@@ -38,12 +37,11 @@ public class Main {
         Escribimos el inicio: Loca. Pulsamos Ctrl + Space  (muestra sugerencias)
          */
         System.out.printf(Locale.ENGLISH, "%.2f", 1.0911);
-        System.out.println(" dólares.");
-        System.out.println();
-        System.out.println("FORMA 3:");
-        /* El 6 corresponde al total de caracteres que ocupará la salida*/
-        System.out.println();
-        System.out.printf(Locale.ENGLISH, "%06.2f", 1.0911);
+        System.out.printf(" dólares.%n%n");
+        System.out.printf("FORMA 3: %n%n");
+        /* El 05.2f corresponde al total de caracteres que ocupará la salida*/
+
+        System.out.printf(Locale.ENGLISH, "%05.2f", 1.0911);
         System.out.println(" dólares.");
     }
 
